@@ -1,0 +1,32 @@
+body{
+    background-color: #45474B;
+    margin: 0px;
+    padding: 0px;
+  }
+  header{
+    background-color: #F24C3D;
+    margin: 0px;
+    padding: 0px;
+
+    z-index: -1;
+  }
+  header img{
+    width: 5%;
+  }
+  .navbar{
+    margin: 0px;
+    padding: 1px;
+    font-family: 'Ubuntu';
+  }
+  /*product*/
+  main{
+    display: grid;
+    grid-template-columns: repeat(2,40%);
+  }
+  .lc img{
+      margin: 10px;
+      width: 90%;
+  }
+  .rc h1, h2, h4{
+    color: white;
+  }
