@@ -78,15 +78,117 @@
       margin-bottom: 0px;
       padding: 1px;
     }
+    @media (max-width: 767px){
+      .header{
+        background-color: #F24C3D;
+        margin: 0px;
+        padding: 0px;
+        
+        z-index: 1;
+      }
+      header img{
+        display: none;
+      }
+      .navbar{
+        margin: 0px;
+        padding: 0px;
+        font-family: 'Ubuntu';
+        display: flex;
+        justify-content: center;
+      }
+      .home{
+        display: flex;
+        justify-content: center;
+        font-size: 25px;
+        font-weight: bold;
+        padding: 0px;
+      }
+      .home a{
+        padding: 5px;
+        text-decoration: none;
+        color: #F2BE22;
+      }
+      .navbar li{
+        display: flex;
+        text-decoration: none;
+        margin: 0px 5px;
+        
+      }
+      .navbar li a{
+        padding: 5px;
+        color: #FFFFFF;
+        background-color: #F24C3D;
+        text-decoration: none;
+        border-radius: 0%;
+        font-weight: bold;
+      }
+      .navbar li a:hover{
+        border-radius: 999px;
+        background-color: #F2BE22
+      }
+      /*produk*/
+      .product{
+        display: grid;
+        grid-template-columns: repeat(2,50%);
+        margin: 1px;
+      }
+      .product img{
+        width: 80px;
+        border-radius: 9px;
+        margin: 0px 5px;
+        display: flex;
+        justify-content: right;
+      }
+      .prd{
+        height: auto;
+        width: auto;
+        max-width: 350px;
+        background-color: #F2BE22;
+        border-radius: 9px;
+        margin: 10px;
+      }
+      .prd h2{
+        align-items: center;
+      }
+      .prd a, .prd h2{
+        margin: 10px;
+        justify-content: center;
+      }
+      footer{
+        background-color: #383838;
+        color: #ffffff;
+        font-size: 10px;
+
+        text-align: center;
+        margin-bottom: 0px;
+        padding: 1px;
+        width: 100%;
+      }
+      /*footer mobile*/
+      footer{
+        background-color: #383838;
+        color: #ffffff;
+        font-size: 10px;
+
+        text-align: center;
+        margin-bottom: 0px;
+        padding: 1px;
+        width: 100%;
+      }
+    }
     </style>
 </head>
 <body>
     <header>
-        <nav class="navbar">
-          <a href="../index.html">Bakso Nusantara</a>
-          <li><a href="menu.html">Menu</a></li>
-          <li><a href="order.html">Order</a></li>
-          <li><a href="news.html">News</a></li>
+        <nav class="nav">
+          <div class="home">
+            <a href="../index.html">Bakso Nusantara</a>
+          </div>
+          <div class="navbar">
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="order.html">Order</a></li>
+            <li><a href="news.html">News</a></li>
+          </div>
         </nav>
       </header>
       <main>

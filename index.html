@@ -25,19 +25,19 @@
     header img{
       width: 100%;
     }
-    .navbar{
+    .nav{
       margin: 0px;
       padding: 20px;
       font-family: 'Ubuntu';
+    }
+    .home a{
+      text-decoration: none;
+      color: #F2BE22;
     }
     .navbar li{
       display: inline;
       text-decoration: none;
       margin: 10px;
-    }
-    .navbar a{
-      text-decoration: none;
-      color: #F2BE22;
     }
     .navbar li a{
       padding: 10px;
@@ -79,15 +79,105 @@
       margin-bottom: 0px;
       padding: 1px;
     }
+
+    @media (max-width: 767px){
+      /*header mobile*/
+      .header{
+        background-color: #F24C3D;
+        margin: 0px;
+        padding: 0px;
+        
+        z-index: 1;
+      }
+      header img{
+        display: none;
+      }
+      .navbar{
+        margin: 0px;
+        padding: 0px;
+        font-family: 'Ubuntu';
+        display: flex;
+        justify-content: center;
+      }
+      .home{
+        display: flex;
+        justify-content: center;
+        font-size: 25px;
+        font-weight: bold;
+        padding: 0px;
+      }
+      .navbar li{
+        display: flex;
+        text-decoration: none;
+        margin: 0px 5px;
+        
+      }
+      .navbar li a{
+        padding: 5px;
+        color: #FFFFFF;
+        background-color: #F24C3D;
+        text-decoration: none;
+        border-radius: 0%;
+        font-weight: bold;
+      }
+      .navbar li a:hover{
+        border-radius: 999px;
+        background-color: #F2BE22
+      }
+      /*product mobile*/
+      .product{
+        display: block;
+        margin: 1px;
+      }
+      .product img{
+        width: 80px;
+        border-radius: 9px;
+        margin: 0px 5px;
+        display: flex;
+        justify-content: right;
+      }
+      .prd{
+        display: grid;
+        grid-template-columns: repeat(2,35% 65%);
+        height: auto;
+        width: auto;
+        max-width: 350px;
+        background-color: #F2BE22;
+        border-radius: 9px;
+        margin: 10px;
+      }
+      .prd h2{
+        align-items: center;
+      }
+      .prd a, .prd h2{
+        margin: 10px;
+        justify-content: center;
+      }
+      /*footer mobile*/
+      footer{
+        background-color: #383838;
+        color: #ffffff;
+        font-size: 10px;
+
+        text-align: center;
+        margin-bottom: 0px;
+        padding: 1px;
+        width: 100%;
+      }
+    }
   </style>
 </head>
 <body>
   <header>
-    <nav class="navbar">
-      <a href="index.html">Bakso Nusantara</a>
-      <li><a href="webpage/menu.html">Menu</a></li>
-      <li><a href="webpage/order.html">Order</a></li>
-      <li><a href="webpage/news.html">News</a></li>
+    <nav class="nav">
+      <div class="home">
+        <a href="index.html">Bakso Nusantara</a>
+      </div>
+      <div class="navbar">
+        <li><a href="webpage/menu.html">Menu</a></li>
+        <li><a href="webpage/order.html">Order</a></li>
+        <li><a href="webpage/news.html">News</a></li>
+      </div>
     </nav>
     <img src="Assets/Image/Banner.png" alt="Bakso Nusantara">
   </header>
@@ -100,25 +190,25 @@
         <h2>Chicken Steak</h2>
       </div>
       <div class="prd">
-        <a href="product/1.html">
+        <a href="product/2.html">
           <center><img src="product/fp/2.jpeg" alt="Produk"></center>
         </a>
         <h2>Mie Ayam</h2>
       </div>
       <div class="prd">
-        <a href="product/2.html">
+        <a href="product/3.html">
           <center><img src="product/fp/3.jpeg" alt="Produk"></center>
         </a>
         <h2>Mie Ayam Bakso</h2>
       </div>
       <div class="prd">
-        <a href="product/3.html">
+        <a href="product/4.html">
           <center><img src="product/fp/4.jpeg" alt="Produk"></center>
         </a>
         <h2>Mie Gachoan</h2>
       </div>
       <div class="prd">
-        <a href="product/4.html">
+        <a href="product/5.html">
           <center><img src="product/fp/5.jpeg" alt="Produk"></center>
         </a>
         <h2>Mie Tek-tek</h2>

@@ -63,37 +63,89 @@
       margin-bottom: 0px;
       padding: 1px;
     }
+    @media (max-width: 767px){
+      .header{
+        background-color: #F24C3D;
+        margin: 0px;
+        padding: 0px;
+        
+        z-index: 1;
+      }
+      header img{
+        display: none;
+      }
+      .navbar{
+        margin: 0px;
+        padding: 0px;
+        font-family: 'Ubuntu';
+        display: flex;
+        justify-content: center;
+      }
+      .home{
+        display: flex;
+        justify-content: center;
+        font-size: 25px;
+        font-weight: bold;
+        padding: 0px;
+      }
+      .home a{
+        padding: 5px;
+        text-decoration: none;
+        color: #F2BE22;
+      }
+      .navbar li{
+        display: flex;
+        text-decoration: none;
+        margin: 0px 5px;
+        
+      }
+      .navbar li a{
+        padding: 5px;
+        color: #FFFFFF;
+        background-color: #F24C3D;
+        text-decoration: none;
+        border-radius: 0%;
+        font-weight: bold;
+      }
+      .navbar li a:hover{
+        border-radius: 999px;
+        background-color: #F2BE22
+      }
+      /*footer mobile*/
+      footer{
+        background-color: #383838;
+        color: #ffffff;
+        font-size: 10px;
+
+        text-align: center;
+        margin-bottom: 0px;
+        padding: 1px;
+        width: 100%;
+      }
+    }
     </style>
 </head>
 <body>
     <header>
-        <nav class="navbar">
-          <a href="../index.html">Bakso Nusantara</a>
-          <li><a href="menu.html">Menu</a></li>
-          <li><a href="order.html">Order</a></li>
-          <li><a href="news.html">News</a></li>
+        <nav class="nav">
+          <div class="home">
+            <a href="../index.html">Bakso Nusantara</a>
+          </div>
+          <div class="navbar">
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="order.html">Order</a></li>
+            <li><a href="news.html">News</a></li>
+          </div>
         </nav>
       </header>
       <main>
-        <div id="berita1">
-          <h1>Lorem Ipsum</h1>
-          <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit</p>
-        </div>
         <div id="berita2">
-          <h1>Lorem Ipsum</h1>
-          <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit</p>
+          <h1>Website Bakso Nusantara V2.0</h1>
+          <p>Pada Versi 2.0 ini terdapat beberapa perubahan diantaranya:<br>-Tersedia pada tampilan mobile.<br>-Penyederhanaan website.<br>-Tampilan website yang lebih rapi.</p>
         </div>
-        <div id="berita3">
-          <h1>Lorem Ipsum</h1>
-          <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit</p>
-        </div>
-        <div id="berita4">
-          <h1>Lorem Ipsum</h1>
-          <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit</p>
-        </div>
-        <div id="berita5">
-          <h1>Lorem Ipsum</h1>
-          <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit</p>
+        <div id="berita1">
+          <h1>Website Bakso Nusantara V1.0</h1>
+          <p>Website Bakso Nusantara Versi 1.0 diluncurkan pada tanggal 14 Agustus dan hanya tersedia pada desktop.</p>
         </div>
       </main>
       <footer>
