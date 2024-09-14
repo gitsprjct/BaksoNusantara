@@ -4,196 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
     <!--Google Fonts 'Ubuntu'-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
-    <style>
-    body{
-      background-color: #45474B;
-      margin: 0px;
-      padding: 0px;
-    }
-    header{
-      background-color: #F24C3D;
-      margin: 0px;
-      padding: 0px;
-
-      z-index: -1;
-    }
-    header img{
-      width: 100%;
-    }
-    .nav{
-      margin: 0px;
-      padding: 20px;
-      font-family: 'Ubuntu';
-      display: flex;
-    }
-    .home a{
-      text-decoration: none;
-      color: #F2BE22;
-    }
-    .navbar li{
-      display: inline;
-      list-style: none;
-      margin: 10px;
-    }
-    .navbar li a{
-      padding: 10px;
-      background-color: #F2BE22;
-      color: #FFFFFF;
-      border-radius: 999px;
-      text-decoration: none;
-    }
-    main{
-      display: inline;
-    }
-    /*Produk*/
-    .product{
-      display: grid;
-      grid-template-columns: repeat(5,20%);
-      margin: 15px;
-    }
-    .product img{
-      width: 160px;
-      border-radius: 9px;
-      margin: 0px 15px;
-    }
-    .prd{
-      height: auto;
-      width: auto;
-      max-width: 350px;
-      background-color: #F2BE22;
-      border-radius: 9px;
-      margin: 10px;
-    }
-    .prd a,.prd h2,.prd h3,.prd p{
-      margin: 10px;
-    }
-    /*footer*/
-    footer{
-      background-color: #383838;
-      color: #ffffff;
-
-      text-align: center;
-      margin-bottom: 0px;
-      padding: 1px;
-    }
-    @media (max-width: 767px){
-      .header{
-        background-color: #F24C3D;
-        margin: 0px;
-        padding: 0px;
-        
-        z-index: 1;
-      }
-      header img{
-        display: none;
-      }
-      .navbar{
-        margin: 0px;
-        padding: 0px;
-        font-family: 'Ubuntu';
-        display: flex;
-        justify-content: center;
-      }
-      .home{
-        display: flex;
-        justify-content: center;
-        font-size: 25px;
-        font-weight: bold;
-        padding: 0px;
-      }
-      .home a{
-        padding: 5px;
-        text-decoration: none;
-        color: #F2BE22;
-      }
-      .navbar li{
-        display: flex;
-        text-decoration: none;
-        margin: 0px 5px;
-        
-      }
-      .navbar li a{
-        padding: 5px;
-        color: #FFFFFF;
-        background-color: #F24C3D;
-        text-decoration: none;
-        border-radius: 0%;
-        font-weight: bold;
-      }
-      .navbar li a:hover{
-        border-radius: 999px;
-        background-color: #F2BE22
-      }
-      /*produk*/
-      .product{
-        display: grid;
-        grid-template-columns: repeat(2,50%);
-        margin: 1px;
-      }
-      .product img{
-        width: 80px;
-        border-radius: 9px;
-        margin: 0px 5px;
-        display: flex;
-        justify-content: right;
-      }
-      .prd{
-        height: auto;
-        width: auto;
-        max-width: 350px;
-        background-color: #F2BE22;
-        border-radius: 9px;
-        margin: 10px;
-      }
-      .prd h2{
-        align-items: center;
-      }
-      .prd a, .prd h2{
-        margin: 10px;
-        justify-content: center;
-      }
-      footer{
-        background-color: #383838;
-        color: #ffffff;
-        font-size: 10px;
-
-        text-align: center;
-        margin-bottom: 0px;
-        padding: 1px;
-        width: 100%;
-      }
-      /*footer mobile*/
-      footer{
-        background-color: #383838;
-        color: #ffffff;
-        font-size: 10px;
-
-        text-align: center;
-        margin-bottom: 0px;
-        padding: 1px;
-        width: 100%;
-      }
-    }
-    </style>
 </head>
 <body>
-    <header>
-        <nav class="nav">
-          <div class="home">
-            <a href="../index.html">Bakso Nusantara</a>
-          </div>
-          <div class="navbar">
-            <li><a href="menu.html">Menu</a></li>
-            <li><a href="order.html">Order</a></li>
-            <li><a href="news.html">News</a></li>
-          </div>
+  <header>
+    <img src="../Assets/Image/Banner.png" alt="Bakso Nusantara">
+        <nav class="navbar">
+          <div></div>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../webpage/menu.html">Menu</a></li>
+          <li><a href="../webpage/order.html">Order</a></li>
+          <li><a href="../webpage/news.html">News</a></li>
+          <div></div>
         </nav>
-      </header>
-      <main>
+  </header>
+      <main id="menu">
         <div class="product">
             <div class="prd">
               <a href="../product/1.html">

@@ -1,0 +1,204 @@
+/*DESKTOP VIEW*/
+body{
+    background-color: #45474B;
+    margin: 0px;
+    padding: 0px;
+  }
+header{
+    background-color: #F24C3D;
+    margin: 0px;
+    padding: 0px;
+  
+  }
+header img{
+    width: 100%;
+  }
+.navbar{
+    display: grid;
+    grid-template-columns: repeat(6,16.66%);
+    margin: 0px;
+    padding: 5px;
+    font-family: 'Ubuntu';
+  }
+.navbar div{
+    margin: 10px;
+    background-color: #F2BE22;
+    border-radius: 10px;
+  }
+.navbar li{
+    display: inline;
+    margin: 10px;
+    list-style: none;
+  }
+.navbar li a{
+    background-color: #F24C3D;
+    padding: 10px 50px;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bolder;
+  }
+.navbar li a:hover{
+    background-color: #F2BE22;
+    border-radius: 999px;
+    padding: 10px 50px;
+    color: #FFFFFF;
+    text-decoration: none;
+    animation: ease-in-out 2s;
+}
+footer{
+    background-color: #383838;
+    color: #ffffff;
+
+    text-align: center;
+    margin-bottom: 0px;
+    padding: 1px;
+  }
+/*Menu Page*/
+#menu{
+    display: inline;
+}
+.product{
+    display: grid;
+    grid-template-columns: repeat(5,20%);
+    margin: 15px;
+  }
+  .product img{
+    width: 160px;
+    border-radius: 9px;
+    margin: 0px 15px;
+  }
+  .prd{
+    height: auto;
+    width: auto;
+    max-width: 350px;
+    background-color: #F2BE22;
+    border-radius: 9px;
+    margin: 10px;
+  }
+.prd a,.prd h2,.prd h3,.prd p{
+    margin: 10px;
+  }
+/*Order Page*/
+#order{
+    display: grid;
+    grid-template-columns: repeat(2,70% 30%);
+    margin: 15px;
+
+  }
+.maps img{
+      width: 600px;
+  }
+.olshop img{
+    width: 300px;
+  }
+/*News Page*/
+#news{
+    display: inline;
+  }
+#news div{
+    margin: 10px;
+    background-color: #F2BE22;
+    border-radius: 10px;
+  }
+#news div h1{
+    margin: 10px;
+  }
+#news div p{
+    margin: 10px;
+  }  
+/*MOBILE VIEW*/
+@media (max-width: 767px){
+    header img{
+      display: none;
+    }
+    .navbar{
+      display: flex;
+      justify-content: center;
+    }
+    .navbar li{
+      display: flex;
+      text-decoration: none;
+      margin: 0px 5px;
+      
+    }
+    .navbar li a{
+      padding: 5px;
+      color: #FFFFFF;
+      background-color: #F24C3D;
+      text-decoration: none;
+      border-radius: 0%;
+      font-weight: bold;
+    }
+    .navbar li a:hover{
+      border-radius: 999px;
+      background-color: #F2BE22
+    }
+    /*Menu Page*/
+    .product{
+      display: block;
+      margin: 1px;
+    }
+    .product img{
+      width: 80px;
+      border-radius: 9px;
+      margin: 0px 5px;
+      display: flex;
+      justify-content: right;
+    }
+    .prd{
+      display: grid;
+      grid-template-columns: repeat(2,35% 65%);
+      height: auto;
+      width: auto;
+      max-width: 350px;
+      background-color: #F2BE22;
+      border-radius: 9px;
+      margin: 10px;
+    }
+    .prd h2{
+      align-items: center;
+    }
+    .prd a, .prd h2{
+      margin: 10px;
+      justify-content: center;
+    }
+    /*Order Page*/
+    #order{
+      margin: 15px;
+      display: flex;
+      flex-direction: column;
+    }
+    .maps img{
+      width: 250px;
+    }
+    .olshop img{
+      display: inline;
+      width: 60px;
+    }
+    /*News Page*/
+    #news{
+      display: inline;
+    }
+    #news div{
+      margin: 10px;
+      background-color: #F2BE22;
+      border-radius: 10px;
+    }
+    #news div h1{
+      margin: 10px;
+    }
+    #news div p{
+      margin: 10px;
+    }  
+    /*footer mobile*/
+    footer{
+      background-color: #383838;
+      color: #ffffff;
+      font-size: 10px;
+
+      text-align: center;
+      margin-bottom: 0px;
+      padding: 1px;
+      width: 100%;
+    }
+  }
